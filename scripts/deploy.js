@@ -47,7 +47,7 @@ async function main() {
   }
 
   // Listing properties...
-  transaction = await escrow.connect(seller).list(1, buyer.address, tokens(20), tokens(10))
+  let transaction = await escrow.connect(seller).list(1, buyer.address, tokens(20), tokens(10))
   await transaction.wait()
 
   transaction = await escrow.connect(seller).list(2, buyer.address, tokens(15), tokens(5))
