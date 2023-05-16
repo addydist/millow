@@ -5,6 +5,7 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 const hre = require("hardhat");
+const {ethers}=require("hardhat");
 
 const tokens = (n) => {
   return ethers.utils.parseUnits(n.toString(), 'ether')
